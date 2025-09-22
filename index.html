@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll - horizontal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+<header>
+  <div class="menu-wrapper">
+    <div class="head-menu">
+      <p><a href="">TOUR</a></p>
+      <p><a href="">ABOUT</a></p>
+      <p><span class="material-symbols-outlined star-icon">star</span></p>
+      <p><a href="">MUSIC</a></p>
+      <p><span class="material-symbols-outlined star-icon">star</span></p>
+      <p><a href="">SERVICES</a></p>
+      <p><a href="">CONTACT</a></p>
+    </div>
+  </div>
+     
+</header><!--MENU-->
+<div class="page-contanier">
+  <div class="horizontal-container">
+    <div class="panels-container">
+
+      <!-- First panel: video -->
+       <section class="panel panel-video" data-index="0">
+        <video class="video-background" autoplay loop muted playsinline>
+          <source src="video/video06.mp4" type="video/mp4">
+        </video>
+   
+      </section>
+<!-- Second panel: Text -->
+      <section class="panel panel-full" data-index="1">
+       
+        <div class="panel-full-overlay"></div>
+        <div class="panel-full-content visivel">
+          <div class="chapter">Grammy 2025</div>
+          <h2 class="title split-text">Beyoncé wins Album of the Year for Cowboy Carter</h2>
+          <ul class="first-text animate-on-scroll">
+           <li>After six nominations without a win, Beyoncé finally took home the Album of the Year award at the 2025 GRAMMYs with <em>Cowboy Carter</em>.</li>
+           <li>The ceremony took place in Los Angeles, and she took the stage accompanied by her daughter Blue Ivy.</li>
+           <li>In her speech, Beyoncé said: “I feel fulfilled and very honored. It’s been many, many years.”</li>
+           <li>She dedicated the award to singer Linda Martell, a Black pioneer in country music, whose story inspired the album.</li>
+         </ul>
+        </div>
+      </section>
+      <!-- Third panel: imagem -->
+      <section class="panel panel-fixed" data-index="2">
+        <div class="image-wrapper">
+          <img src="imagem/beyonce-album.webp" alt="" class="panel-fixed-image" data-speed="0.25">
+        </div>
+       
+      </section>
+      
+      <!-- fourth panel: imagem -->
+      <section class="panel panel-fixed" data-index="3">
+        <div class="image-wrapper">
+          <img src="imagem/beyonce08.webp" alt="" class="panel-fixed-image " data-speed="0.25">
+        </div>
+       
+      </section>
+      <!-- fifth panel: imagem -->
+      <section class="panel panel-fixed" data-index="4">
+        <div class="image-wrapper">
+          <img src="imagem/beyonce09.webp" alt="" class="panel-fixed-image " data-speed="0.25">
+        </div>
+       
+      </section>
+      <!--sixth panel:imagem -text -->
+      <section class="panel panel-full" data-index="5">
+          <div class="panel-full-content visivel">
+          <div class="split-layout">
+     
+          <div class="image-side">
+             <img src="imagem/beyonce10.webp" alt=""  data-speed="0.15">
+             <h1 id="nome" class="typewriter-text"></h1>
+           </div>
+         </div>
+         </div>
+      </section>
+<!--fim-content-->
+  </div>
+     <!-- Botões de scroll com ícones do Google -->
+      <div class="scroll-buttons">
+         
+        <button id="scroll-left" class="scroll-button left-button">
+           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="gold">
+              <path d="M12 .587l3.668 7.431L24 9.748l-6 5.848L19.335 24 12 20.201 4.665 24 6 15.596 0 9.748l8.332-1.73z"/>
+           </svg>
+        </button>
+
+        <button id="scroll-right" class="scroll-button right-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="gold">
+               <path d="M12 .587l3.668 7.431L24 9.748l-6 5.848L19.335 24 12 20.201 4.665 24 6 15.596 0 9.748l8.332-1.73z"/>
+           </svg>
+        </button>
+     </div>
+
+   
+  </div>
+</div>
+<!--JAVASCRIPT-->
+<script src="main.js"></script>
+
+  
+</body>
+</html>
